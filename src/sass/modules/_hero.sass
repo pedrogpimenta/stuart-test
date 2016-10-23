@@ -1,0 +1,51 @@
+$hero__text-color: white
+
+.hero-main
+  position: relative
+  overflow: hidden
+
+  color: $hero__text-color
+  text-align: center
+
+  // +mq(768px, max)
+  background: url(/assets/img/hero-background-photo@2x.jpg) no-repeat center center
+  background-size: cover
+
+  &__video
+    display: none
+
+    +mq(768px)
+      display: block
+      position: absolute
+      z-index: 1
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      min-width: 100%
+      min-height: 100%
+      width: auto
+      height: auto
+
+  .container
+    position: relative
+    z-index: 2
+
+  &__title
+    font-size: 2.625rem
+    font-weight: 300
+    margin-top: 10rem
+    margin-bottom: 0
+    letter-spacing: -0.03rem
+    line-height: 1.75
+
+  &__subtitle
+    font-size: 1.5rem
+    margin-top: 0
+    margin-bottom: 2.1rem
+    letter-spacing: -0.03rem
+
+  .btn--cta
+    display: block
+    width: 18.75rem
+    margin: 2.1rem auto 10rem
+    max-width: 100%

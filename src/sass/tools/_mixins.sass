@@ -1,0 +1,4 @@
+// Media queries, based on: http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin
+=mq($point, $query1: min, $query2: width)
+  @media (#{$query1}-#{$query2}: $point)
+    @content

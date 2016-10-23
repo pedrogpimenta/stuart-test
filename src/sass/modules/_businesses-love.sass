@@ -1,0 +1,57 @@
+.businesses-love
+  text-align: center
+
+  .container
+    +mq(768px, max)
+      padding: 0
+
+  &__title
+    font-weight: 300
+    line-height: 1.4
+
+  &__container
+    +mq(768px)
+      margin: 0 -1rem
+      font-size: 0
+
+  &__element
+    position: relative
+    display: block
+    text-decoration: none
+    margin-bottom: 1rem
+    overflow: hidden
+    color: $text--color
+
+    padding: 1rem
+
+    +mq(768px)
+      display: inline-block
+      width: 50%
+      font-size: $base-font-size
+
+  .btn--icon
+    +mq(768px, max)
+      display: none
+
+  &__img
+    +mq(768px, max)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+
+    +mq(768px)
+      border-radius: 4px
+      overflow: hidden
+
+  &__content
+    text-align: left
+
+    +mq(768px, max)
+      text-align: center
+      position: relative
+      z-index: 2
+      color: white
+
+    &__title
+      font-size: 1.25rem

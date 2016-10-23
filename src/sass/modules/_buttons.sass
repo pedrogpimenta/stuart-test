@@ -1,0 +1,44 @@
+$btn--primary__color--start: #21B8F9
+$btn--primary__color--end: #11A3EB
+
+$btn--primary__text-color: white
+
+$btn--primary__shadow: 0 1px 1px rgba(#0A0B0C, 0.12)
+
+.btn
+  display: inline-block
+  margin: 0
+  padding: 0
+
+  background: none
+  border: 0
+
+  // Styles
+
+  &--primary
+    background: linear-gradient(to bottom, $btn--primary__color--start, $btn--primary__color--end)
+    color: $btn--primary__text-color
+    text-decoration: none
+    box-shadow: $btn--primary__shadow
+
+  &--icon
+    text-decoration: none
+
+    img
+      display: inline
+      vertical-align: middle
+
+
+  // Sizes
+
+  &--big
+    font-size: 1.125rem
+    padding: .5em
+    border-radius: 4px
+
+  &--small
+    font-size: 0.875rem
+    padding: 0 .7em
+    line-height: 2
+    border-radius: 4px
+    letter-spacing: -0.02rem

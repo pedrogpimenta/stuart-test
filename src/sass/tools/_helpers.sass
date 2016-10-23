@@ -1,0 +1,17 @@
+// Hide stuff from regular screens
+.vh
+  clip: rect(1px 1px 1px 1px) /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px)
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px)
+  position: absolute !important
+  height: 1px
+  width: 1px
+  overflow: hidden
+
+
+// Content container
+
+.container
+  max-width: 60rem
+  margin: 0 auto
+  padding: 0 0.625rem
